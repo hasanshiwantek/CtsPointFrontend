@@ -1,8 +1,9 @@
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono,Arimo } from "next/font/google";
 import "./globals.css";
+import NavBar from "./Header/page";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const arimoSans = Arimo({
+  variable: "--font-arim",
   subsets: ["latin"],
 });
 
@@ -20,8 +21,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${arimoSans.variable} antialiased`}
       >
+        <NavBar/>
         {children}
       </body>
     </html>
