@@ -1,45 +1,59 @@
-#container{
-    background-color: black;
-    color: white;
-    padding: 0.5rem 2.5rem;
-    width: 100vw;
+#container {
+  background-color: black;
+  color: white;
+  padding: 0.5rem 7.5rem;
+  width: 100vw;
 }
 
-.headerSec{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.headerSec {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0.5rem;
 }
 
-.headerContactSec ul{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 10px;
+.headerContactSec ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
 }
 
 
-.headerContactSec ul li{
-    color:#b8b8b8;
 
-
-}
-.contactSec ul{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 10px;
+.headerContactSec ul li {
+  color: #b8b8b8;
+  transition: all 0.25s ease;
 }
 
-.contactSec ul li{
-    color:#b8b8b8;
+.headerContactSec ul div svg {
+    font-size: 1.8rem;
+  }
+
+.headerContactSec ul li:hover {
+  color: #4563b3;
+}
+
+.contactSec ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.contactSec ul li {
+  color: #b8b8b8;
+  transition: all 0.25s ease;
+}
+
+.contactSec ul li:hover{
+  color: #4563b3;
 
 }
 
-.headerText span{
-    font-weight: 700;
-    color: #fff;
-    font-size: 1.2rem;
-    vertical-align: middle;
-
+.headerText span {
+  font-weight: 700;
+  color: #fff;
+  font-size: 1.2rem;
+  vertical-align: middle;
 }
