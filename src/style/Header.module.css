@@ -34,6 +34,12 @@
 .contactSec ul li{
     color:#b8b8b8;
 
-  
+}
+
+.headerText span{
+    font-weight: 700;
+    color: #fff;
+    font-size: 1.2rem;
+    vertical-align: middle;
 
 }
