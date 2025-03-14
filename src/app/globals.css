@@ -30,12 +30,20 @@ blockquote {
     padding: 0;
 }
 
+input{
+  font-size: 1.1rem;
+  font-weight: 500;
+}
 
 /* Add border box to images */
 img {
     border: 0;
 }
 
+span{
+  font-size: 1rem;
+  font-weight: 500;
+}
 /*styling the text */
 
 h1 {
@@ -48,12 +56,15 @@ h2{
     font-size: 3.2rem;
     margin-bottom: 2rem;
 }
+h3{
+  font-size: 2rem;
+}
 
 p, a, li {
     font-size: 1.1rem;
     /*line-height: 1.5;*/
     margin: 2rem 0 4rem 0;
-    font-weight: 300;
+    /* font-weight: 300; */
     letter-spacing: .05rem;
     line-height: 1.65;
     font-weight: 700;
@@ -79,7 +90,7 @@ ol, li {
 
 
 /* CSS */
-button {
+/* button {
     background-color: rgba(33 127 160);
     
     border-radius: 2.4rem;
@@ -98,7 +109,6 @@ button {
     user-select: none;
     -webkit-user-select: none;
     touch-action: manipulation;
-    /*letter-spacing: -0.1rem;*/
 }
 
 button:hover {
@@ -106,8 +116,8 @@ button:hover {
     border: .1rem solid rgba(33 127 160);
     color: rgba(33 127 160);
     transition-duration: .1s;
-}
-
+} */
+/* 
 @media (min-width: 768px) {
     button {
         margin-bottom: 10px;
@@ -117,9 +127,8 @@ button:hover {
 
 @media (max-width: 750px) {
     button {
-        /* margin-bottom: 70px; */
         text-align: center;
 
 
     }
-}
+} */
