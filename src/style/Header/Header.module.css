@@ -1,0 +1,125 @@
+/* TOP HEADER STYLING */
+
+#container {
+  background-color: black;
+  color: white;
+  padding: 0.5rem 7.5rem;
+  width: 100vw;
+}
+
+.headerSec {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0.5rem;
+}
+
+.headerContactSec ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.headerContactSec ul li {
+  color: #b8b8b8;
+  transition: all 0.25s ease;
+}
+
+.headerContactSec ul div svg {
+  font-size: 1.8rem;
+}
+
+.headerContactSec ul li:hover {
+  color: #4563b3;
+}
+
+.contactSec ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.contactSec ul li {
+  color: #b8b8b8;
+  transition: all 0.25s ease;
+}
+
+.contactSec ul li:hover {
+  color: #4563b3;
+}
+
+.headerText span {
+  font-weight: 700;
+  color: #fff;
+  font-size: 1.2rem;
+  vertical-align: middle;
+}
+
+/* NAVBAR STYLING */
+
+.navBarContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1600px;
+    padding: 25px 30px;
+
+}
+
+.navBarCategoriesSec{
+    /* background-color: aqua; */
+    /* border: 1px solid lightgray; */
+    width: 55vw;
+}
+
+.navBarCategoriesSec input{
+    width: 45vw;
+    border: 1px solid lightgray;
+    height: 48px;
+    padding: 1rem;
+    
+}
+
+.navBarCategoriesSec select{
+    z-index: 2;
+    height: 100%;
+    line-height: 16px;
+    width: 13%;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    -moz-appearance: none;
+    appearance: none;
+    -webkit-appearance: none;
+    padding: 14.5px 10px; 
+    font-weight: 700;
+    font-size: 1.2rem;
+    background-color: transparent;
+}
+
+
+.navBarCategoriesSec button {
+    z-index: 2;
+    height: 100%;
+    border: none;
+    cursor: pointer;
+    -moz-appearance: none;
+    appearance: none;
+    -webkit-appearance: none;
+    padding: 14.5px 5px; 
+    font-size: 2rem;
+
+}
+
+.navBarLeft{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5rem;
+}
+
+.navBarLeftContactSec{
+    text-align: -webkit-center;
+}

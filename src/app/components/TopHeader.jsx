@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "@/style/Header.module.css";
+import styles from "@/style/Header/Header.module.css";
 import Link from "next/link";
 import { IoIosCall } from "react-icons/io";
 import { MdOutlineMail } from "react-icons/md";
