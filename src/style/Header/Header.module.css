@@ -12,6 +12,7 @@
   justify-content: space-between;
   align-items: center;
   margin: 0.5rem;
+  flex-wrap: wrap;
 }
 
 .headerContactSec ul {
@@ -63,6 +64,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    /* flex-wrap: wrap; */
     max-width: 1600px;
     padding: 25px 30px;
 

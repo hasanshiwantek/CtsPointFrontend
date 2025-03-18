@@ -24,7 +24,7 @@ const TopHeader = () => {
               </div>
             </ul>
           </div>
-          <div className={styles.headerText}>
+          <div className={`${styles.headerText} `}>
             <span>USA Stock and most items are ready to ship*</span>
           </div>
           <div className={styles.contactSec}>
