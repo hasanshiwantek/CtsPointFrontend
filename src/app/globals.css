@@ -87,11 +87,38 @@ li {
 
 /* Buttons (Optional Custom Tailwind Styling) */
 .btn-primary {
-  @apply bg-blue-500 text-white font-medium py-2 px-6 rounded-lg transition duration-300;
+  font-size: 13px;
+  font-weight: 700;
+  font-style: normal;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: auto;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  border-radius: 3px;
+  margin: 0;
+  padding: 0 15px;
+  height: 36px;
+  line-height: 34px;
+  letter-spacing: .05rem;
+  border: 1px solid #3479e0;
+  color: #fff;
+  background-color: #3479e0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-transition: all .25s ease;
+  transition: all .25s ease;
 }
 
 .btn-primary:hover {
-  @apply bg-transparent border border-blue-500 text-blue-500;
+  @apply bg-black text-white;
 }
 
 /* Responsive Typography */

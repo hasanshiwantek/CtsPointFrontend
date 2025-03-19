@@ -3,7 +3,7 @@
 .leftMenuBarContainer {
   border-left: 1px solid lightgray;
   /* margin-top: 15px; */
-  height: 45vh;
+  height: 39vh;
 }
 .menuBar ul {
   display: flex;
@@ -223,4 +223,15 @@
 .heroNavBar {
   border-left: 1px solid lightgray;
   border-bottom: 1px solid lightgray;
+}
+
+
+
+/* RIGHT HEROSECTION RESPONSIVENESS */
+
+@media screen and (max-width: 1400px) {
+  .heroRightContainer{
+    display: none;
+  }
+  
 }
