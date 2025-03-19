@@ -1,6 +1,7 @@
-import { Geist, Geist_Mono,Arimo } from "next/font/google";
+import { Geist, Geist_Mono, Arimo } from "next/font/google";
 import "./globals.css";
 import NavBar from "./Header/page";
+import Footer from "./Footer/page";
 
 const arimoSans = Arimo({
   variable: "--font-arim",
@@ -20,11 +21,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body
-        className={`${arimoSans.variable} antialiased`}
-      >
-        <NavBar/>
+      <body className={`${arimoSans.variable} antialiased `}>
+        <NavBar />
         {children}
+        <Footer/>
       </body>
     </html>
   );

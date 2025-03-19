@@ -1,0 +1,226 @@
+/* MENUBAR LEFT STYLING */
+
+.leftMenuBarContainer {
+  border-left: 1px solid lightgray;
+  /* margin-top: 15px; */
+  height: 45vh;
+}
+.menuBar ul {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  position: relative;
+  border-radius: 0;
+  border-bottom: 2px solid #f0f0f0;
+  border-top: none;
+  left: -1px;
+  right: -1px;
+  padding: 0;
+}
+
+.menuBarLink {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+  width: 15vw;
+  position: relative;
+}
+
+.menuBarLink li {
+  flex: 1;
+  list-style: none;
+  padding: 3px;
+}
+.menuBarLink:hover {
+  background-color: rgb(243, 243, 243);
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+.menuBarLink li:hover {
+  color: #4563b3;
+  transition: all 0.3s ease-in-out;
+}
+.menuBarLink i {
+  margin-left: auto;
+  font-size: 1.5rem;
+}
+
+.heroNavBar ul {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+  padding: 10px;
+}
+
+/* LEFT MENUBAR DROPDOWN STYLING */
+
+.subMenu {
+  position: absolute;
+  left: 100%;
+  top: 0;
+  background: white;
+  width: 200px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  border: 1px solid lightgray;
+  display: flex;
+  flex-direction: column;
+  z-index: 10;
+  padding: 10px 0;
+  /* Animation for smooth transition */
+  opacity: 0;
+  transform: scale(0.95);
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+/* Show dropdown when hovering */
+.menuBarLink:hover .subMenu {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.subMenu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 8px;
+}
+
+.subMenu ul li {
+  padding: 5px 12px;
+  white-space: nowrap;
+  text-transform: capitalize;
+}
+.subMenu ul li a {
+  transition: all 0.2s ease-in-out;
+}
+
+.subMenu ul li a:hover {
+  color: #4563b3;
+  /* border-bottom: 1px solid #4563b3; */
+  text-decoration: underline;
+}
+
+/* MULTI-LEVEL DROPDOWN (SUBMENU INSIDE SUBMENU) */
+.nestedSubMenu {
+  position: absolute;
+  left: 100%;
+  top: 0;
+  background: white;
+  width: 300px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  z-index: 10;
+  padding: 10px 0;
+
+  /* Hidden by default */
+  opacity: 0;
+  transform: scale(0.95);
+  transition: opacity 0.2s ease-in-out, transform 0.2s ease-in-out;
+}
+
+/* Show nested submenu on hover */
+.subMenu ul li:hover .nestedSubMenu {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.nestedSubMenu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nestedSubMenu ul li {
+  /* padding: 5px 8px; */
+}
+
+.nestedSubMenu ul li a {
+  display: block;
+  color: #000;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+  padding: 2px;
+}
+
+.nestedSubMenu ul li a:hover {
+  color: #4563b3;
+  /* border-bottom: 1px solid #4563b3; */
+}
+
+.menuItemWithSubmenu {
+  position: relative;
+}
+
+
+
+
+  
+
+
+/* RIGHT HEROSECTION CONTAINER */
+
+.heroRightContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border: 1px solid #f0f0f0;
+  padding: 20px 20px 28px;
+  margin-top: 37px;
+}
+
+.productCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.productCard img {
+  background-color: transparent;
+  margin: auto;
+}
+.productCard img:hover {
+  transform: scale(1.08);
+  opacity: 0.8;
+  transition: all 0.5s ease-in-out;
+}
+
+.rightHeroSec span a {
+  color: #4563b3;
+  font-weight: 700;
+  text-align: center;
+  width: 100%;
+  margin-top: 22px;
+  display: inline-block;
+}
+
+.productCard a {
+  color: #323232 !important;
+  width: 15vw;
+}
+.productCard span {
+  font-weight: bold;
+  font-size: 1.3rem;
+  margin-top: 5px;
+  color: #323232 !important;
+}
+
+/* MID HEROSECTION STYLING */
+
+.heroNavBar ul li a:hover {
+  color: #4563b3;
+  background-color: rgb(243, 243, 243);
+  transition: all 0.3s ease-in-out;
+}
+
+.heroNavBar ul li a {
+  padding: 12px 15px;
+}
+
+.heroNavBar {
+  border-left: 1px solid lightgray;
+  border-bottom: 1px solid lightgray;
+}

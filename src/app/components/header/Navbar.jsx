@@ -10,10 +10,10 @@ export default function Navbar() {
   return (
     <nav className={`${styles.navBarContainer} `}>
       <div className={styles.logo}>
-        <Image src="/Logo.webp" alt="Logo" width={150} height={300} />
+        <Image src="/Logo.webp" alt="Logo" width={180} height={300} />
       </div>
 
-      <div className={`${styles.navBarCategoriesSec} shadow`}>
+      <div className={`${styles.navBarCategoriesSec} shadow `}>
         <select name="category" id="search_cate">
           <option value="">All Categories</option>
           <option value="33">Memory</option>
@@ -269,7 +269,7 @@ export default function Navbar() {
 
       <div className={styles.navBarLeft}>
         <div className={styles.navBarLeftReviewSec}>
-          <h3 className="text-center">Excellent</h3>
+          <h3 className="text-center ">Excellent</h3>
           <Image
             src="https://cdn.trustpilot.net/brand-assets/4.1.0/stars/stars-4.5.svg"
             alt="Reviews"
@@ -285,7 +285,7 @@ export default function Navbar() {
         </div>
         <div className={`${styles.navBarLeftContactSec}  `}>
           <FiUser size={20} />
-          <div className="m-2">
+          <div>
             <span>
               <a href="#">SignIn</a>
             </span>
@@ -296,9 +296,9 @@ export default function Navbar() {
           </div>
         </div>
         <div className={styles.navBarLeftCartSec}>
-          <FiShoppingCart size={24} />
-          <span>
-            <a href="">My Cart</a>
+          <FiShoppingCart size={20} />
+          <span > 
+            <a href="#">My Cart</a>
           </span>
           {/* {cartCount === 0 && (
             <span className="absolute -top-1 -right-1 bg-red-600 text-white text-xs rounded-full px-1">
