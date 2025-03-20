@@ -64,15 +64,13 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* flex-wrap: wrap; */
+    flex-wrap: wrap;
     max-width: 1600px;
     padding: 25px 30px;
 
 }
 
 .navBarCategoriesSec{
-    /* background-color: aqua; */
-    /* border: 1px solid lightgray; */
     width: 55vw;
 }
 
@@ -125,3 +123,28 @@
 .navBarLeftContactSec{
     text-align: -webkit-center;
 }
+
+
+/* MOBILE NAVBAR STYLING */
+
+.hamburgerSec{
+  display: none;
+}
+
+@media screen and (max-width: 1060px){
+  .navBarCategoriesSec{
+    display: none;
+  }
+  .hamburgerSec{
+    display: flex;
+  }
+  .navBarLeftReviewSec{
+    display: none;
+  }
+  .contactSec{
+    display: none;
+  }
+  .headerContactSec{
+    display: none;
+  }
+ }

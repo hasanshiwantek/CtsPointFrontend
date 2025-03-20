@@ -2,11 +2,11 @@ import React from "react";
 import styles from "@/style/Home/Home.module.css";
 import Link from "next/link";
 import Image from "next/image";
-import heroImage from "../../../../public/heroImage.jpg"
+import heroImage from "../../../../public/heroImage.jpg";
 const HeroSectionMiddle = () => {
   return (
     <>
-      <div className={`${styles.heroSectionContainer} `}>
+      <div className={`${styles.heroSectionContainer}`}>
         <div className={styles.heroSecMid}>
           <nav className={styles.heroNavBar}>
             <ul>
@@ -24,8 +24,14 @@ const HeroSectionMiddle = () => {
               </li>
             </ul>
           </nav>
-          <div className={styles.heoImageSec}>
-            <Image src={heroImage}  alt="Hero Image" width={1000} height={1000} />
+          <div className={`${styles.heroImageSec} w-full`}>
+            <Image
+              src={heroImage}
+              alt="Hero Image"
+              width={1000}
+              height={1000}
+              className="w-full h-auto object-cover"
+            />
           </div>
         </div>
       </div>

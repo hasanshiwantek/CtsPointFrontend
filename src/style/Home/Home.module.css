@@ -233,5 +233,14 @@
   .heroRightContainer{
     display: none;
   }
-  
+}
+
+@media screen and (max-width: 1060px) {
+  .leftMenuBarContainer{
+    display: none;
+  }
+  .heroNavBar{
+    display: none;
+  }
+
 }
