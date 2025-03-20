@@ -44,6 +44,14 @@ span {
   font-weight: 500;
 }
 
+input{
+  border: none ;
+  background: transparent ;
+  outline: none ;
+}
+
+
+
 /* Image Reset */
 img {
   border: 0;

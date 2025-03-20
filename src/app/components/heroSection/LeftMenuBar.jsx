@@ -8,9 +8,11 @@ const LeftMenuBar = () => {
   const [activeMenu, setActiveMenu] = useState(null);
   const [activeSubMenu, setActiveSubMenu] = useState(null); // Track submenu state
 
+
   return (
     <>
-      <div className={`${styles.leftMenuBarContainer} `}>
+      <div className={`${styles.leftMenuBarContainer} `}
+    >
         <div className={styles.categoriesText}>
           <div className="flex justify-start items-center  mb-6 ">
             <span className="font-semibold text-lg p-2">
@@ -25,8 +27,12 @@ const LeftMenuBar = () => {
           <ul>
             <div
               className={styles.menuBarLink}
-              onMouseEnter={() => setActiveMenu("Memory")}
-              onMouseLeave={() => setActiveMenu(null)}
+              onMouseEnter={() => {
+                setActiveMenu("Memory");
+              }}
+              onMouseLeave={() => {
+                setActiveMenu(null);
+              }}
             >
               <li>
                 <Link href="#">Memory</Link>
@@ -35,7 +41,7 @@ const LeftMenuBar = () => {
                 <IoIosArrowForward />
               </i>
               {activeMenu === "Memory" && (
-                <div className={`${styles.subMenu} !p-0 mt-[-4px] `}>
+                <div className={`${styles.subMenu} !p-0 mt-[-4px]  `}>
                   <ul className="!grid !grid-cols-5 !gap-4 !w-[80vw] bg-white shadow-2xl border border-[#f0f0f0] !p-10  transition z-10 h-96">
                     <li>
                       <Link href="#">Cache Memory</Link>
@@ -86,7 +92,9 @@ const LeftMenuBar = () => {
                 <div
                   key={index}
                   className={styles.menuBarLink}
-                  onMouseEnter={() => setActiveMenu(menu.title)}
+                  onMouseEnter={() => {
+                    setActiveMenu(menu.title);
+                  }}
                   onMouseLeave={() => {
                     setActiveMenu(null);
                     setActiveSubMenu(null);
