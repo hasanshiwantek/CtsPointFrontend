@@ -4,17 +4,33 @@ import { FiSearch, FiUser, FiShoppingCart } from "react-icons/fi";
 import Image from "next/image";
 import styles from "@/style/Header/Header.module.css";
 import { IoIosArrowDown } from "react-icons/io";
+import { GiHamburgerMenu } from "react-icons/gi";
+import { IoMdClose } from "react-icons/io";
 export default function Navbar() {
   // const [cartCount, setCartCount] = useState(0);
 
   return (
     <nav className={`${styles.navBarContainer} `}>
-      <div className={styles.logo}>
-        <Image src="/Logo.webp" alt="Logo" width={180} height={300} />
+      <div className={`${styles.hamburgerSec} `}>
+        <i className="text-3xl">
+          <GiHamburgerMenu />
+        </i>
       </div>
 
-      <div className={`${styles.navBarCategoriesSec} shadow `}>
-        <select name="category" id="search_cate">
+      <div
+        className={`${styles.logo} w-44 h-16 sm:w-36 sm:h-12 md:w-48 md:h-20 lg:w-56 lg:h-24`}
+      >
+        <Image
+          src="/Logo.webp"
+          alt="Logo"
+          width={180}
+          height={300}
+          className="w-full h-full object-contain"
+        />
+      </div>
+
+      <div className={`${styles.navBarCategoriesSec} shadow`}>
+        <select name="category" id="search_cate" className=" !md:w-full !w-40 ">
           <option value="">All Categories</option>
           <option value="33">Memory</option>
           <option value="64"> Cache Memory</option>
@@ -297,7 +313,7 @@ export default function Navbar() {
         </div>
         <div className={styles.navBarLeftCartSec}>
           <FiShoppingCart size={20} />
-          <span > 
+          <span>
             <a href="#">My Cart</a>
           </span>
           {/* {cartCount === 0 && (
