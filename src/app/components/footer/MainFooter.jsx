@@ -6,7 +6,7 @@ import FooterBottom from "./FooterBottom";
 const MainFooter = () => {
   return (
     <>
-      <main className="flex justify-around flex-col bg-[#c6c6c6]  p-[3rem] sm:flex-wrap sm:flex-row md:flex-wrap md:flex-row   lg:flex-nowrap">
+      <main className="lg:flex-row justify-around flex-col bg-[#c6c6c6] p-[3rem] sm:flex-wrap lg:flex-nowrap lg:flex ">
         <FooterLeft />
         <FooterRight />
       </main>
