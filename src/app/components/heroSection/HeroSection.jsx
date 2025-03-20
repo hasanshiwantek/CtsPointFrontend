@@ -5,7 +5,7 @@ import HeroSectionRight from './HeroSectionRight'
 const HeroSection = () => {
   return (
     <>
-    <main className='flex justify-center  px-12   border-t-[1px] border-gray-200'>
+    <main className='flex justify-center     border-t-[1px] border-gray-200'>
     <LeftMenuBar/>
     <HeroSectionMiddle/>
     <HeroSectionRight/>
