@@ -1,12 +1,29 @@
 /* FOOTER CONTAINER STYLING */
 
-.footerContainer {
+/* .footerContainer {
   position: absolute;
   left: 0;
   top: 100%;
   width: 100%;
   margin-top: 50%;
+} */
+
+
+ .footerContainer {
+  width: 100%;
+  /* margin-top: 10%; */
+
 }
+
+.footerContainer::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 100px;
+  height: 1px;
+  width: 100%;
+
+} 
 
 /* FOOTER MAIL SECTION */
 

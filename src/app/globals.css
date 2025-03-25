@@ -3,6 +3,20 @@
 @tailwind components;
 @tailwind utilities;
 
+
+:root {
+  --primary-color: #2c83ec;
+  --font-color: #323232;
+  --border-color: #f2f2f2;
+  /* --table-bg-color: #bfbfbf; */
+  /* --table-th-color: #45575cff; */
+  /* --table-outer-color: #e8e8e8ff; */
+  /* --box-shadow: #bfbfbfff; */
+  /* --dropdown-bg-color: rgb(255, 255, 255); */
+  /* --popup-bg-color: #3d3d3dc9; */
+}
+
+
 /* Box Sizing Rule */
 *,
 *::before,
@@ -41,7 +55,7 @@ blockquote {
 input,
 span {
   font-size: 1.1rem;
-  font-weight: 500;
+  font-weight: 700;
 }
 
 input{
@@ -59,21 +73,25 @@ img {
 
 /* Tailwind Typography System */
 h1 {
-  @apply text-3xl font-bold text-gray-900; /* 2.5rem */
+  @apply text-3xl font-bold text-[#323232]; /* 2.5rem */
 }
 
 h2 {
-  @apply text-2xl font-semibold text-gray-800 mb-8; /* 1.5rem */
+  @apply text-2xl font-bold text-[#323232] mb-8; /* 1.5rem */
 }
 
 h3 {
-  @apply text-xl font-medium text-gray-700; /* 1.2rem */
+  @apply text-xl font-medium text-[#323232]; /* 1.2rem */
 }
 
 p,
 a,
 li {
   @apply text-lg font-bold leading-relaxed tracking-wide;
+}
+
+span{
+  @apply text-lg font-bold leading-relaxed tracking-wide ;
 }
 
 p{
@@ -146,6 +164,9 @@ li {
     @apply text-sm;
   }
 }
+
+
+
 
 @layer base {
   :root {

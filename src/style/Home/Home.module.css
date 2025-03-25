@@ -3,7 +3,7 @@
 .leftMenuBarContainer {
   border-left: 1px solid lightgray;
   /* margin-top: 15px; */
-  height: 39vh;
+  height: 50vh;
 }
 .menuBar ul {
   display: flex;
@@ -22,7 +22,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 5px;
+  padding: 1rem;
   width: 15vw;
   position: relative;
 }
@@ -236,11 +236,15 @@
 }
 
 @media screen and (max-width: 1060px) {
-  .leftMenuBarContainer{
-    display: none;
-  }
+
   .heroNavBar{
     display: none;
   }
 
+}
+
+@media screen and (max-width: 1060px){
+  .leftMenuBarContainer{
+    display: none;
+  }
 }

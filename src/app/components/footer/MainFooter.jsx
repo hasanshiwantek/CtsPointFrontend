@@ -10,7 +10,7 @@ const MainFooter = () => {
         <FooterLeft />
         <FooterRight />
       </main>
-      <FooterBottom/>
+      <FooterBottom />
     </>
   );
 };
