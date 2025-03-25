@@ -1,0 +1,23 @@
+/* BLOG GRID STYLING */
+
+.blogGridContainer{
+    background-color: var(--border-color);
+    margin-top: 4rem;
+}
+
+.blogGridSec{
+    display: flex;
+    justify-content: space-between;
+    padding: 65px 0 22px;
+}
+
+.blogLeft{
+    width: 80rem;
+    padding: 2rem 5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.blogRight{
+    text-align: left;
+}

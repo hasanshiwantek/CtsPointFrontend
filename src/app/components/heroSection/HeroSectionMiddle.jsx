@@ -29,7 +29,7 @@ const HeroSectionMiddle = () => {
               src={heroImage}
               alt="Hero Image"
               width={1000}
-              height={1000}
+              height={500}
               className="w-full h-auto object-cover"
             />
           </div>

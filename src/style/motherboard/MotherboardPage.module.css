@@ -1,0 +1,64 @@
+.motherboardContainer {
+  /* width: 100vw; */
+  /* padding: 1rem 8rem; */
+  text-align: left;
+  margin-top: 5rem;
+
+
+}
+
+.motherboardSection {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid var(--border-color);
+  margin-top: 1rem;
+}
+
+.motherboardSection .sidebar {
+  background-color: var(--border-color);
+}
+
+.sidebar ul {
+  padding: 1rem 1rem;
+  display: flex;
+  flex-direction: column;
+  /* width: 20rem; */
+}
+
+.sidebar ul li {
+  padding: 1rem;
+  width: 20rem;
+}
+.sidebar ul li a {
+  color: #5a5a5a;
+  transition: all 0.5s ease;
+  line-height: 20px;
+}
+.sidebar ul li a:hover {
+  color: #4563b3;
+  border-bottom: 1px solid #4563b3;
+}
+
+.productGrid1 img:hover,
+.productGrid2 img:hover {
+  transform: scale(1.08);
+  opacity: 0.6;
+  transition: all 0.7s ease-in-out;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1024px) {
+  .banner img {
+    display: none;
+  }
+
+  .motherboardSection {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .sidebar ul {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}

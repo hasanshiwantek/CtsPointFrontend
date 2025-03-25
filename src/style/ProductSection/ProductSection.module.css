@@ -1,0 +1,118 @@
+.productCarouselContainer {
+    text-align: left;
+    /* width: 100vw; */
+    /* padding: 1rem 10rem; */
+    margin-top: 2rem;
+  }
+  
+  .productCarouselContainer h1 {
+    font-weight: bold;
+  }
+  
+  .carouselItem {
+    display: flex;
+    justify-content: left;
+  }
+  
+   .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+  }
+
+  .productCarouselContainer img:hover {
+    transform: scale(1.08);
+    opacity: 0.6;
+    transition: all 0.7s ease-in-out;
+    cursor: pointer ;
+  }
+  
+
+
+  /* CATEGORY SECTION */
+
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    margin-bottom: 2rem;    
+  }
+  
+  .haloMultiCategoryWrapper {
+    width: 100%;
+    background: #f8f9fa;
+    /* padding: 20px; */
+    border-radius: 8px;
+  }
+  
+  .categoryFilterMobile {
+    width: 100%;
+  }
+  
+  .categoryFilter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .haloMultiCategory {
+    width: 100%;
+  }
+  
+  .haloMultilevelCategoryFilter {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+
+    justify-content: space-around;
+  }
+  
+  .formLabel {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+
+  
+  .formWrapper {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+
+  }
+  
+  .formField {
+    display: flex;
+    flex-wrap: wrap;
+
+    flex-direction: column;
+  }
+  
+  .formSelect {
+    border: 1px solid #ccc;
+    font-size: 12px;
+    font-weight: 500;
+    font-style: normal;
+    width: 20rem;
+    border-radius: 3px;
+    margin: 0;
+    padding: 10px 15px;
+    line-height: 34px;
+    letter-spacing: .05rem;
+
+
+
+  }
+  
+  .groupButton {
+    display: flex;
+    gap: 10px;
+    /* margin-top: 10px; */
+  }
+
+  
