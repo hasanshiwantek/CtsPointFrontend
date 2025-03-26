@@ -154,12 +154,6 @@
   position: relative;
 }
 
-
-
-
-  
-
-
 /* RIGHT HEROSECTION CONTAINER */
 
 .heroRightContainer {
@@ -225,26 +219,21 @@
   border-bottom: 1px solid lightgray;
 }
 
-
-
 /* RIGHT HEROSECTION RESPONSIVENESS */
 
 @media screen and (max-width: 1400px) {
-  .heroRightContainer{
+  .heroRightContainer {
     display: none;
   }
 }
 
 @media screen and (max-width: 1060px) {
-
-  .heroNavBar{
+  .heroNavBar {
     display: none;
   }
-
 }
-
-@media screen and (max-width: 1060px){
-  .leftMenuBarContainer{
+@media screen and (max-width: 1250px) {
+  .leftMenuBarContainer {
     display: none;
   }
 }

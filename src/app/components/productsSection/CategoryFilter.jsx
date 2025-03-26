@@ -9,19 +9,21 @@ const CategoryFilter = () => {
       <div className={styles.categoryFilterMobile}>
         <div className={styles.categoryFilter}>
           <div className={styles.haloMultiCategory} data-multi-level="false">
-            <div className={styles.haloMultilevelCategoryFilter}>
+            <div
+              className={`${styles.haloMultilevelCategoryFilter} flex-col lg:flex-row  `}
+            >
               <div className={styles.formLabel}>
                 <h2 className={styles.title}>Select Your Part</h2>
                 <span className={styles.desc}>
                   Customize, Modify, Upgrade, Repair, Replace
                 </span>
               </div>
-              <div className={styles.formWrapper}>
+              <div className={`${styles.formWrapper} flex-col lg:flex-row md:flex-row `}>
                 {/* Level 1 Dropdown */}
                 <div className={styles.formField}>
                   <select
                     id="halo_select_level_1"
-                    className={styles.formSelect}
+                    className={`${styles.formSelect} w-[100vw] lg:w-[20rem] sm:w-[20rem]`}
                     defaultValue=""
                   >
                     <option value="" disabled>
@@ -44,7 +46,7 @@ const CategoryFilter = () => {
                 <div className={styles.formField}>
                   <select
                     id="halo_select_level_2"
-                    className={styles.formSelect}
+                    className={`${styles.formSelect} w-[100vw] lg:w-[20rem] sm:w-[20rem]`}
                     defaultValue=""
                   >
                     <option value={""} disabled>
@@ -57,14 +59,10 @@ const CategoryFilter = () => {
                 <div className={styles.formField}>
                   <select
                     id="halo_select_level_3"
-                    className={styles.formSelect}
+                    className={`${styles.formSelect} w-[100vw] lg:w-[20rem] sm:w-[20rem]  `}
                     defaultValue={""}
                   >
-                    <option
-                    value={""}
-                      disabled
-
-                    >
+                    <option value={""} disabled>
                       Select Level 3...
                     </option>
                   </select>
