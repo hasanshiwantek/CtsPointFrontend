@@ -11,7 +11,7 @@ const FooterLeft = () => {
           <p>Get the latest updates on new products and upcoming sales</p>
           <div className={styles.mailForm}>
             <input type="email" name="" id="" placeholder="Your Email Address" />
-            <button className="">Subscribe</button>
+            <button className="btn-primary">Subscribe</button>
           </div>
           <div className={styles.footerIcons}>
               <Link href="https://www.facebook.com" target="_blank">
