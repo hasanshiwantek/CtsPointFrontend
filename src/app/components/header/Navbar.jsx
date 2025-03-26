@@ -19,7 +19,7 @@ export default function Navbar() {
           className={`${styles.hamburgerSec} cursor-pointer`}
           onClick={() => setIsMobileNavOpen(true)}
         >
-          <GiHamburgerMenu size={25} />
+          <GiHamburgerMenu size={20} />
         </div>
 
         <div
@@ -310,7 +310,7 @@ export default function Navbar() {
           </div>
           <div className={`${styles.navBarLeftContactSec}  `}>
             <FiUser size={20} />
-            <div>
+            <div className="lg:block hidden">
               <span>
                 <a href="#">SignIn</a>
               </span>
@@ -322,7 +322,7 @@ export default function Navbar() {
           </div>
           <div className={styles.navBarLeftCartSec}>
             <FiShoppingCart size={20} />
-            <span>
+            <span className="lg:block hidden">
               <a href="#">My Cart</a>
             </span>
             {/* {cartCount === 0 && (
