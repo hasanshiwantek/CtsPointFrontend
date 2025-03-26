@@ -8,7 +8,7 @@ const MainFooter = () => {
   return (
     <>
       <main
-        className={`${styles.mainFooterContainer} flex justify-around flex-row bg-[#c6c6c6]  p-[3rem] `}
+        className={`${styles.mainFooterContainer}  bg-[#c6c6c6]  p-[3rem] `}
       >
         <FooterLeft />
         <FooterRight />
