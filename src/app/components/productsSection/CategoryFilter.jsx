@@ -14,16 +14,16 @@ const CategoryFilter = () => {
             >
               <div className={styles.formLabel}>
                 <h2 className={styles.title}>Select Your Part</h2>
-                <span className={styles.desc}>
+                <p className={styles.desc}>
                   Customize, Modify, Upgrade, Repair, Replace
-                </span>
+                </p>
               </div>
               <div className={`${styles.formWrapper} flex-col lg:flex-row md:flex-row `}>
                 {/* Level 1 Dropdown */}
                 <div className={styles.formField}>
                   <select
                     id="halo_select_level_1"
-                    className={`${styles.formSelect} w-[100vw] lg:w-[20rem] sm:w-[20rem]`}
+                    className={`${styles.formSelect} w-[95vw] lg:w-[20rem] sm:w-[20rem]`}
                     defaultValue=""
                   >
                     <option value="" disabled>
@@ -46,7 +46,7 @@ const CategoryFilter = () => {
                 <div className={styles.formField}>
                   <select
                     id="halo_select_level_2"
-                    className={`${styles.formSelect} w-[100vw] lg:w-[20rem] sm:w-[20rem]`}
+                    className={`${styles.formSelect} w-[95vw] lg:w-[20rem] sm:w-[20rem]`}
                     defaultValue=""
                   >
                     <option value={""} disabled>
@@ -59,7 +59,7 @@ const CategoryFilter = () => {
                 <div className={styles.formField}>
                   <select
                     id="halo_select_level_3"
-                    className={`${styles.formSelect} w-[100vw] lg:w-[20rem] sm:w-[20rem]  `}
+                    className={`${styles.formSelect} w-[95vw] lg:w-[20rem] sm:w-[20rem]  `}
                     defaultValue={""}
                   >
                     <option value={""} disabled>

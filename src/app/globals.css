@@ -3,7 +3,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
 :root {
   --primary-color: #2c83ec;
   --font-color: #323232;
@@ -16,7 +15,6 @@
   /* --popup-bg-color: #3d3d3dc9; */
 }
 
-
 /* Box Sizing Rule */
 *,
 *::before,
@@ -25,7 +23,6 @@
   margin: 0;
   padding: 0;
 }
-
 
 /* Default Font Size */
 html {
@@ -58,13 +55,10 @@ span {
   font-weight: 700;
 }
 
-input{
-  border: none ;
-  background: transparent ;
-  outline: none ;
+input {
+  border: none;
+  outline: none;
 }
-
-
 
 /* Image Reset */
 img {
@@ -90,12 +84,12 @@ li {
   @apply text-lg font-bold leading-relaxed tracking-wide;
 }
 
-span{
-  @apply text-lg font-bold leading-relaxed tracking-wide ;
+span {
+  @apply text-lg font-bold leading-relaxed tracking-wide;
 }
 
-p{
-    color: #3c3c3c
+p {
+  color: #3c3c3c;
 }
 /* Ensure links are clickable */
 a {
@@ -132,15 +126,15 @@ li {
   padding: 0 15px;
   height: 36px;
   line-height: 34px;
-  letter-spacing: .05rem;
+  letter-spacing: 0.05rem;
   border: 1px solid #3479e0;
   color: #fff;
   background-color: #3479e0;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  -webkit-transition: all .25s ease;
-  transition: all .25s ease;
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
 }
 
 .btn-primary:hover {
@@ -164,9 +158,6 @@ li {
     @apply text-sm;
   }
 }
-
-
-
 
 @layer base {
   :root {
@@ -234,3 +225,7 @@ li {
 }
 
 
+svg.lucide.lucide-chevron-down.h-4.w-4.shrink-0.text-muted-foreground.transition-transform.duration-200 {
+  height: 2rem !important;
+  width: 2rem !important;
+}
