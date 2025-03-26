@@ -79,23 +79,24 @@ const FooterRight = () => {
       </h2>
       <ul className="text-[#323232] dark:text-gray-400 font-medium">
         <div className="flex gap-2 mb-4">
-          <FaLocationDot />
+          <FaLocationDot size={15} />
           <li>440 N Barranca Ave, Suite 1032 Covina, CA 91723</li>
         </div>
         <div className="flex gap-2 mb-4">
-          <IoIosCall />
+          <IoIosCall size={15} />
           <li>
             Call +1 (209)-498 4198 <br />
             International +1 (209)-498 4198
           </li>
         </div>
-        <button className="text-white p-4 rounded-lg border border-white text-lg ml-8 mb-6 hover:text-[#323232] transition font-semibold text-center whitespace-nowrap">
-          ASK AN EXPERT
-        </button>
         <div className="flex gap-2 mb-4">
-          <MdAlternateEmail />
+          <MdAlternateEmail size={15} />
           <li>sales@ctspoint.com</li>
         </div>
+        <button className="btn-primary whitespace-nowrap ">
+          ASK AN EXPERT
+        </button>
+ 
       </ul>
     </div>
   );

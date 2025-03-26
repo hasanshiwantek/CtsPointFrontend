@@ -39,7 +39,7 @@
 
 .mailForm {
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
   gap: 10px;
 }
@@ -54,11 +54,9 @@
   border-radius: 5px;
 }
 
-.mailForm button {
-  /* width: 12rem; */
+/* .mailForm button {
+  width: 12rem;
   border-radius: 5px;
-  font-size: .70vw;
-  font-weight: 700;
   text-transform: uppercase;
   border-radius: 3px;
   line-height: 1.78vw;
@@ -69,7 +67,7 @@
   white-space: nowrap;
   -webkit-transition: all 0.25s ease;
   transition: all 0.25s ease;
-}
+} */
 
 .footerIcons {
   margin-top: 20px;
@@ -172,6 +170,11 @@
   .mailForm button{
     width: 90vw;
     
+  }
+
+  .mainFooterContainer{
+    flex-direction: column;
+
   }
 
 }
