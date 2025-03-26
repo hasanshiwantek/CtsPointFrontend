@@ -39,7 +39,7 @@ export default function Navbar() {
             name="category"
             id="search_cate"
             className=" !md:w-full !w-40 "
-          >
+            >
             <option value="">All Categories</option>
             <option value="33">Memory</option>
             <option value="64"> Cache Memory</option>

@@ -14,7 +14,7 @@ const HeroSection = () => {
   return (
     <>
     <main className="overflow-x-hidden">
-      <div className="flex flex-col justify-center items-center mx-auto my-auto  px-20">
+      <div className="flex flex-col justify-center items-center mx-auto my-auto  lg:px-20 md:px-10 sm:px-5 px-2">
         <div className={`flex justify-center  border-t-[1px] border-gray-200`}>
           <LeftMenuBar />
           <HeroSectionMiddle />
