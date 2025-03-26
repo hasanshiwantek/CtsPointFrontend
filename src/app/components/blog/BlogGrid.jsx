@@ -50,7 +50,7 @@ const BlogGrid = () => {
                           <p className="opacity-60 ">{item.date}</p>
                         </div>
                         <p className="">
-                          {item.description}...{" "}
+                          {item.description}...
                           <span className="text-[#4563b3] underline">
                             View Details
                           </span>

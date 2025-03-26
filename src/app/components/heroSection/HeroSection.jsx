@@ -13,7 +13,8 @@ import BlogGrid from "../blog/BlogGrid";
 const HeroSection = () => {
   return (
     <>
-      <main className="flex flex-col justify-center items-center mx-auto my-auto  px-16">
+    <main className="overflow-x-hidden">
+      <div className="flex flex-col justify-center items-center mx-auto my-auto  px-20">
         <div className={`flex justify-center  border-t-[1px] border-gray-200`}>
           <LeftMenuBar />
           <HeroSectionMiddle />
@@ -27,8 +28,10 @@ const HeroSection = () => {
         <PcAndServerPage/>
         <TopProducts/>
         <ReviewSection/>
-      </main>
+      </div>
         <BlogGrid/>
+    </main>
+
     </>
   );
 };

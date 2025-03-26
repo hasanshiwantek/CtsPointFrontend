@@ -61,7 +61,7 @@ const CommonCategorySection = ({
         {/* Product Grid */}
         <div className={styles.productGrid}>
           <div
-            className={`${styles.productGrid1} flex justify-around items-center`}
+            className={`${styles.productGrid1} flex justify-around items-center md:flex-col lg:flex-row sm:flex-col flex-col mt-8`}
           >
             <div>
               <h2>{shopNowTitle}</h2>
