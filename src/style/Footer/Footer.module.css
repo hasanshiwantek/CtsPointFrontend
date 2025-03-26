@@ -28,7 +28,7 @@
 /* FOOTER MAIL SECTION */
 
 .footerMailContainer {
-  padding: 3rem;
+  /* padding: 3rem; */
 }
 
 .footerMailSection p {
@@ -57,24 +57,11 @@
 .mailForm button {
   /* width: 12rem; */
   border-radius: 5px;
-  font-size: 13px;
+  font-size: .70vw;
   font-weight: 700;
-  font-style: normal;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  text-decoration: none;
-  text-align: center;
   text-transform: uppercase;
   border-radius: 3px;
-  margin: 0;
-  padding: 0 15px;
-  height: 36px;
-  line-height: 34px;
+  line-height: 1.78vw;
   letter-spacing: 0.05rem;
   border: 1px solid #3479e0;
   color: #fff;
