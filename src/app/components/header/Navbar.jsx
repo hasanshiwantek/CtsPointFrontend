@@ -4,22 +4,28 @@ import { FiSearch, FiUser, FiShoppingCart } from "react-icons/fi";
 import Image from "next/image";
 import styles from "@/style/Header/Header.module.css";
 import { IoIosArrowDown } from "react-icons/io";
-import { GiHamburgerMenu } from "react-icons/gi";
 import { IoMdClose } from "react-icons/io";
 import MobileNavbar from "./MobileNavbar";
-
+import { CiSearch, CiUser, CiShoppingCart } from "react-icons/ci";
+import { RxHamburgerMenu } from "react-icons/rx";
 export default function Navbar() {
   // const [cartCount, setCartCount] = useState(0);
   const [isMobileNavOpen, setIsMobileNavOpen] = useState(false);
   return (
     <>
       <nav className={`${styles.navBarContainer} `}>
-        {/* Hamburger Icon (Only Visible on Mobile) */}
-        <div
-          className={`${styles.hamburgerSec} cursor-pointer`}
-          onClick={() => setIsMobileNavOpen(true)}
-        >
-          <GiHamburgerMenu size={20} />
+        {/* Hamburger and Search Icon (Only Visible on Mobile) */}
+        <div className="flex items-center justify-center gap-5">
+          <div
+            className={`${styles.hamburgerSec} cursor-pointer`}
+            onClick={() => setIsMobileNavOpen(true)}
+          >
+            <RxHamburgerMenu size={30} />
+          </div>
+
+          <div className={`${styles.searchSec} cursor-pointer`}>
+            <CiSearch size={30} />
+          </div>
         </div>
 
         <div
@@ -39,7 +45,7 @@ export default function Navbar() {
             name="category"
             id="search_cate"
             className=" !md:w-full !w-40 "
-            >
+          >
             <option value="">All Categories</option>
             <option value="33">Memory</option>
             <option value="64"> Cache Memory</option>
@@ -288,7 +294,7 @@ export default function Navbar() {
           </select>
           <input type="text" placeholder="Search for a product" />
           <button>
-            <FiSearch />
+            <CiSearch />
           </button>
         </div>
 
@@ -309,7 +315,7 @@ export default function Navbar() {
             </span>
           </div>
           <div className={`${styles.navBarLeftContactSec}  `}>
-            <FiUser size={20} />
+            <CiUser size={30} />
             <div className="lg:block hidden">
               <span>
                 <a href="#">SignIn</a>
@@ -321,7 +327,7 @@ export default function Navbar() {
             </div>
           </div>
           <div className={styles.navBarLeftCartSec}>
-            <FiShoppingCart size={20} />
+            <CiShoppingCart size={30} />
             <span className="lg:block hidden">
               <a href="#">My Cart</a>
             </span>
