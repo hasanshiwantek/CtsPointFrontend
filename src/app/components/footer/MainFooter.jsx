@@ -8,7 +8,7 @@ const MainFooter = () => {
   return (
     <>
       <main
-        className={`${styles.mainFooterContainer}  bg-[#c6c6c6]  p-[4rem] gap-5 `}
+        className={`${styles.mainFooterContainer}  bg-[#c6c6c6]  lg:p-[4rem] md:p-[3rem] p-[1rem] gap-5 `}
       >
         <FooterLeft />
         <FooterRight />
