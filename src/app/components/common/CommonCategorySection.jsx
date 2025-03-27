@@ -35,7 +35,7 @@ const CommonCategorySection = ({
       <div className={styles.motherboardSection}>
         {/* Sidebar */}
         <div className={styles.sidebar}>
-          <ul className="text-center lg:text-left md:text-left">
+          <ul className="text-center lg:text-left md:text-center justify-center md:justify-start lg:justify-start">
             {categories.map((cat, index) => (
               <li key={index}>
                 <Link href={"#"}>{cat}</Link>
