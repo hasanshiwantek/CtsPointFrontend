@@ -20,14 +20,17 @@
   padding: 1rem 1rem;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  flex-wrap: nowrap;
+  /* justify-content: center; */
   /* width: 20rem; */
 }
 
 .sidebar ul li {
   padding: 1rem;
-  width: 20rem;
+  min-width: 20rem; /* or something suitable */
+  flex: 0 0 auto;
 }
+
 .sidebar ul li a {
   color: #5a5a5a;
   transition: all 0.5s ease;
@@ -59,11 +62,17 @@
   .sidebar ul {
     flex-direction: row;
     flex-wrap: wrap;
+    /* width: 100vw; */
+    /* white-space: nowrap; */
+    /* overflow-x: scroll; */
   }
 }
 
 @media screen and (max-width: 365px) {
-  .motherboardContainer .productGrid2 .card .description {
+  .productGrid2 .card .description {
     width: 80vw ;
+  }
+  .sidebar ul {
+    flex-direction: column;
   }
 }

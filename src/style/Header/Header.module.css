@@ -183,7 +183,7 @@
     white-space: nowrap;
   }
   .navBarContainer {
-    padding: 10px 20px;
+    padding: 10px 10px;
   }
   .navBarCategoriesSec {
     display: none;
@@ -197,6 +197,11 @@
   }
   .headerContactSec {
     display: none;
+  }
+
+  .navBarLeft{
+    gap: 3rem;
+  
   }
 
 }
