@@ -116,3 +116,10 @@
   }
 
   
+
+  @media screen and (max-width:365px) {
+    .productCarouselContainer .card .description{
+     width: 100vw;
+    }
+    
+  }

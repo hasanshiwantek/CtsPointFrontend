@@ -3,8 +3,6 @@
   /* padding: 1rem 8rem; */
   text-align: left;
   margin-top: 5rem;
-
-
 }
 
 .motherboardSection {
@@ -22,6 +20,7 @@
   padding: 1rem 1rem;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   /* width: 20rem; */
 }
 
@@ -60,5 +59,11 @@
   .sidebar ul {
     flex-direction: row;
     flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 365px) {
+  .motherboardContainer .productGrid2 .card .description {
+    width: 80vw ;
   }
 }

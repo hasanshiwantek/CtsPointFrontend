@@ -29,14 +29,14 @@ export default function Navbar() {
         </div>
 
         <div
-          className={`${styles.logo} w-44 h-16 sm:w-36 sm:h-12 md:w-48 md:h-20 lg:w-56 lg:h-24`}
+          className={`${styles.logo} w-44 h-16 sm:w-36 sm:h-12 md:w-48 md:h-20 lg:w-56 lg:h-24 `}
         >
           <Image
             src="/Logo.webp"
             alt="Logo"
             width={180}
             height={300}
-            className="w-full h-full object-contain"
+            className="w-full h-full object-contain p-2"
           />
         </div>
 
