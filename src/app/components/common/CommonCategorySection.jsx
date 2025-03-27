@@ -1,4 +1,4 @@
-import React from "react";
+import * as React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { Card, CardContent } from "@/components/ui/card";
@@ -24,7 +24,7 @@ const CommonCategorySection = ({
     <div className={styles.motherboardContainer}>
       {/* Header */}
       <div
-        className={`${styles.motherboardHeader} flex justify-start gap-10 items-center`}
+        className={`${styles.motherboardHeader} flex justify-center lg:justify-start  gap-10 items-center`}
       >
         <h1>{title}</h1>
         <span className="text-[#4563b3]">
@@ -35,7 +35,7 @@ const CommonCategorySection = ({
       <div className={styles.motherboardSection}>
         {/* Sidebar */}
         <div className={styles.sidebar}>
-          <ul>
+          <ul className="text-center lg:text-left md:text-left">
             {categories.map((cat, index) => (
               <li key={index}>
                 <Link href={"#"}>{cat}</Link>
@@ -93,7 +93,7 @@ const CommonCategorySection = ({
                     key={index}
                     className="pl-1 md:basis-1/3 lg:basis-1/4 sm:basis-1/2"
                   >
-                    <div className="p-1">
+                    <div className={`${styles.card} p-1`}>
                       <Card className="border-none shadow-none rounded-lg flex justify-center items-center">
                         <CardContent className="flex flex-col items-center justify-center p-4">
                           <Image
@@ -104,7 +104,7 @@ const CommonCategorySection = ({
                             className="object-contain mb-3 lg:h-[20vh]"
                           />
                           <h2>{item.title}</h2>
-                          <p className="text-center">
+                          <p className={`${styles.description} text-center`}>
                             {item.description.substring(0, 60)}...
                           </p>
                           <p className="text-xl font-bold mt-2">{item.price}</p>
