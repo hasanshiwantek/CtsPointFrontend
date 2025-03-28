@@ -103,14 +103,14 @@ const FooterRight = () => {
 
   return (
     <footer className={`${styles.footerRightSec} dark:bg-gray-900`}>
-      <div className="mx-auto w-full max-w-screen-xl px-4 py-3 lg:py-8">
+      <div className="mx-auto w-full max-w-screen-xl px-4 py-1 lg:py-8">
         {isMobile ? (
           <>
             <Accordion type="single" collapsible className="w-full mb-6">
               {sections.map(({ title, items }) => (
                 <AccordionItem value={title.toLowerCase()} key={title}>
                   <AccordionTrigger >
-                    <h2 className="text-[#002fe1] ">
+                    <h2 className="text-[#002fe1] mt-[2rem] ">
                     {title}
                     </h2>
                   </AccordionTrigger>
