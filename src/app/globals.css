@@ -138,7 +138,7 @@ li {
 }
 
 .btn-primary:hover {
-  @apply bg-black text-white border-none;
+  @apply bg-black text-white ;
 }
 
 /* Responsive Typography */

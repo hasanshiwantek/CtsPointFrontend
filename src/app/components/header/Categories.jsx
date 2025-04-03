@@ -1,60 +1,19 @@
 "use client";
-import { useState } from "react";
-import { FiSearch, FiUser, FiShoppingCart } from "react-icons/fi";
-import Image from "next/image";
+import React from 'react'
 import styles from "@/style/Header/Header.module.css";
-import { IoIosArrowDown } from "react-icons/io";
-import { IoMdClose } from "react-icons/io";
-import MobileNavbar from "./MobileNavbar";
 import { CiSearch, CiUser, CiShoppingCart } from "react-icons/ci";
-import { RxHamburgerMenu } from "react-icons/rx";
-import Categories from "./Categories";
-export default function Navbar() {
-  // const [cartCount, setCartCount] = useState(0);
-  const [isMobileNavOpen, setIsMobileNavOpen] = useState(false);
-  const [showSearchBar, setShowSearchBar] = useState(false);
-
+const Categories = () => {
   return (
-    <>
-      <nav className={`${styles.navBarContainer} `}>
-        {/* Hamburger and Search Icon (Only Visible on Mobile) */}
-        <div className="flex items-center justify-center gap-5">
-          <div
-            className={`${styles.hamburgerSec} cursor-pointer`}
-            onClick={() => setIsMobileNavOpen(true)}
-          >
-            <RxHamburgerMenu size={30} />
-          </div>
-          <div
-            className={`${styles.searchSec} cursor-pointer`}
-            onClick={() => setShowSearchBar((prev) => !prev)} // toggle visibility
-          >
-            <CiSearch size={30} />
-          </div>
-        </div>
-
-        <div
-          className={`${styles.logo} w-44 h-16 sm:w-36 sm:h-12 md:w-48 md:h-20 lg:w-56 lg:h-32 `}
-        >
-          <Image
-            src="/Logo.webp"
-            alt="Logo"
-            width={200}
-            height={300}
-            className="w-full h-full object-contain p-2"
-          />
-        </div>
-
-        <div className={`${styles.navBarCategoriesSec} shadow`}>
+    <div className={`shadow flex items-center gap-2 p-2 mb-4 `}>
           <select
             name="category"
             id="search_cate"
-            className=" !md:w-full !w-40 "
+           className=" px-3 py-3 rounded  w-44 text-lg font-semibold"
           >
             <option value="">All Categories</option>
             <option value="33">Memory</option>
             <option value="64"> Cache Memory</option>
-            <option value="174"> Desktop memory</option>
+            <option value="174"> Desktop memory</option>    
             <option value="113"> Flash Memory</option>
             <option value="114"> Laptop memory</option>
             <option value="93"> Memory Boards</option>
@@ -297,57 +256,20 @@ export default function Navbar() {
             <option value="116">  IP Phones</option>
             <option value="263">  Phones Accessories</option>
           </select>
-          <input type="text" placeholder="Search for a product" />
-          <button>
-            <CiSearch />
-          </button>
-        </div>
-
-        <div className={styles.navBarLeft}>
-          <div className={styles.navBarLeftReviewSec}>
-            <h3 className="text-center ">Excellent</h3>
-            <Image
-              src="https://cdn.trustpilot.net/brand-assets/4.1.0/stars/stars-4.5.svg"
-              alt="Reviews"
-              width={100}
-              height={100}
-            />
-            <span>
-              Based on
-              <a href="#" className="border-b">
-                18 Reviews
-              </a>
-            </span>
-          </div>
-          <div className={`${styles.navBarLeftContactSec}  `}>
-            <CiUser size={30} />
-            <div className="lg:block hidden">
-              <span>
-                <a href="#">SignIn</a>
-              </span>
-              |
-              <span>
-                <a href="#">Join</a>
-              </span>
-            </div>
-          </div>
-          <div className={styles.navBarLeftCartSec}>
-            <CiShoppingCart size={30} />
-            <span className="lg:block hidden">
-              <a href="#">My Cart</a>
-            </span>
-            {/* {cartCount === 0 && (
-            <span className="absolute -top-1 -right-1 bg-red-600 text-white text-xs rounded-full px-1">
-              0
-            </span>
-          )} */}
-          </div>
-        </div>
-      </nav>
-      {/* Mobile Sidebar Component */}
-      <MobileNavbar isOpen={isMobileNavOpen} setIsOpen={setIsMobileNavOpen} />
-      {showSearchBar && <Categories />}
-
-    </>
-  );
+  
+    <input
+      type="text"
+      placeholder="Search for a product"
+      className="!border px-3 py-3 rounded flex-1 text-lg w-full "
+      style={{border:"1px solid lightGray"}}
+    />
+  
+    <button className="  px-3 py-2 rounded">
+      <CiSearch  size={25} />
+    </button>
+  </div>
+  
+  )
 }
+
+export default Categories
