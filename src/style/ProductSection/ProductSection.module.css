@@ -41,7 +41,7 @@
   }
   
   .haloMultiCategoryWrapper {
-    width: 100%;
+    width: 100vw;
     background: #f8f9fa;
     /* padding: 20px; */
     border-radius: 8px;

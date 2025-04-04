@@ -8,11 +8,9 @@ const LeftMenuBar = () => {
   const [activeMenu, setActiveMenu] = useState(null);
   const [activeSubMenu, setActiveSubMenu] = useState(null); // Track submenu state
 
-
   return (
     <>
-      <div className={`${styles.leftMenuBarContainer} `}
-    >
+      <div className={`${styles.leftMenuBarContainer} `}>
         <div className={styles.categoriesText}>
           <div className="flex justify-start items-center  mb-6 ">
             <span className="font-semibold text-lg p-2">
@@ -41,8 +39,8 @@ const LeftMenuBar = () => {
                 <IoIosArrowForward />
               </i>
               {activeMenu === "Memory" && (
-                <div className={`${styles.subMenu} !p-0 mt-[-4px] `}>
-                  <ul className="!grid !grid-cols-5 !gap-4 !w-[80vw] bg-white shadow-2xl border border-[#f0f0f0] !p-10 transition z-10 h-96">
+                <div className={`${styles.subMenu} !p-0 mt-[-4px]  `}>
+                  <ul className="!grid !grid-cols-5 !gap-4 !w-[80vw] bg-white shadow-2xl border border-[#f0f0f0] !p-10 transition z-10 h-96  fade-in-left delay-75 ">
                     <li>
                       <Link href="#">Cache Memory</Link>
                     </li>
@@ -111,7 +109,7 @@ const LeftMenuBar = () => {
 
                   {activeMenu === menu.title && (
                     <div className={styles.subMenu}>
-                      <ul>
+                      <ul className="fade-in-left  delay-75">
                         {menu.subMenu.map((sub, subIndex) => (
                           <li
                             key={subIndex}

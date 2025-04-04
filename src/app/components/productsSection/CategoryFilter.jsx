@@ -4,7 +4,7 @@ import styles from "@/style/ProductSection/ProductSection.module.css";
 const CategoryFilter = () => {
   return (
     <div
-      className={`${styles.container} ${styles.haloMultiCategoryWrapper} flex-wrap`}
+      className={`${styles.container} ${styles.haloMultiCategoryWrapper} flex-wrap `}
     >
       <div className={styles.categoryFilterMobile}>
         <div className={styles.categoryFilter}>
