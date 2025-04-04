@@ -1,6 +1,3 @@
-"use client";
-import { useState } from "react";
-
 import LeftMenuBar from "./LeftMenuBar";
 import HeroSectionMiddle from "./HeroSectionMiddle";
 import HeroSectionRight from "./HeroSectionRight";
@@ -16,44 +13,20 @@ import BlogGrid from "../blog/BlogGrid";
 import FadeInSection from "../animation/FadeInSection";
 
 const HeroSection = () => {
-  const [isLeftHovered, setIsLeftHovered] = useState(false);
-
   return (
     <main className="">
       <div className="flex flex-col justify-center items-center mx-auto my-auto lg:px-20 md:px-10 sm:px-5 px-2">
         <div className="flex justify-center border-t border-gray-200">
-          {/* <FadeInSection
-            animation="fade-right"
-            onMouseEnter={() => setIsLeftHovered(true)}
-            onMouseLeave={() => setIsLeftHovered(false)}
-            className="z-30"
-          > */}
+          <div>
             <LeftMenuBar />
-          {/* </FadeInSection> */}
-
-          {/* <FadeInSection
-            animation="fade-up"
-            className={`transition-opacity duration-300 ${
-              isLeftHovered ? "opacity-30 pointer-events-none" : "opacity-100"
-            }`}
-          > */}
-            <HeroSectionMiddle />
-          {/* </FadeInSection> */}
-
-          {/* <FadeInSection
-            animation="fade-left"
-            className={`transition-opacity duration-300 ${
-              isLeftHovered ? "opacity-30 pointer-events-none" : "opacity-100"
-            }`}
-          > */}
-            <HeroSectionRight />
-          {/* </FadeInSection> */}
+          </div>
+          <HeroSectionMiddle />
+          <HeroSectionRight />
         </div>
-
-        <div data-aos="fade-up">
+        <div data-aos="fade-up" >
           <CategoryFilter />
         </div>
-        <div data-aos="zoom-in">
+        <div data-aos="zoom-in" >
           <ProductCaraousel />
         </div>
         <div data-aos="fade-up" data-aos-delay="100">

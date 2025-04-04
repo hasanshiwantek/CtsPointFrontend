@@ -23,7 +23,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={`${arimoSans.variable} antialiased overflow-x-hidden `}>
       <AOSWrapper />
-        <NavBar />
+        <NavBar  />
         {children}
         <Footer/>
       </body>

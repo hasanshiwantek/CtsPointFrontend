@@ -14,7 +14,7 @@ export default function Navbar() {
   return (
     <>
       <nav
-        className={`${styles.navBarContainer} `}
+        className={`${styles.navBarContainer} fade-in-start delay-100 `}
       >
         {/* Hamburger and Search Icon (Only Visible on Mobile) */}
         <div className="flex items-center justify-center gap-5">
