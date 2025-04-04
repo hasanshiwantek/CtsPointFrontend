@@ -2,7 +2,7 @@ import { Geist, Geist_Mono, Arimo } from "next/font/google";
 import "./globals.css";
 import NavBar from "./Header/page";
 import Footer from "./Footer/page";
-
+import AOSWrapper from "./components/animation/AOSWrapper";
 const arimoSans = Arimo({
   variable: "--font-arim",
   subsets: ["latin"],
@@ -21,7 +21,8 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${arimoSans.variable} antialiased`}>
+      <body className={`${arimoSans.variable} antialiased overflow-x-hidden `}>
+      <AOSWrapper />
         <NavBar />
         {children}
         <Footer/>
