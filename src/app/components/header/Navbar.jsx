@@ -1,10 +1,7 @@
 "use client";
-import { useState } from "react";
-import { FiSearch, FiUser, FiShoppingCart } from "react-icons/fi";
+import { useState, useEffect } from "react";
 import Image from "next/image";
 import styles from "@/style/Header/Header.module.css";
-import { IoIosArrowDown } from "react-icons/io";
-import { IoMdClose } from "react-icons/io";
 import MobileNavbar from "./MobileNavbar";
 import { CiSearch, CiUser, CiShoppingCart } from "react-icons/ci";
 import { RxHamburgerMenu } from "react-icons/rx";
@@ -16,7 +13,9 @@ export default function Navbar() {
 
   return (
     <>
-      <nav className={`${styles.navBarContainer} `}>
+      <nav
+        className={`${styles.navBarContainer} `}
+      >
         {/* Hamburger and Search Icon (Only Visible on Mobile) */}
         <div className="flex items-center justify-center gap-5">
           <div
@@ -347,7 +346,6 @@ export default function Navbar() {
       {/* Mobile Sidebar Component */}
       <MobileNavbar isOpen={isMobileNavOpen} setIsOpen={setIsMobileNavOpen} />
       {showSearchBar && <Categories />}
-
     </>
   );
 }
