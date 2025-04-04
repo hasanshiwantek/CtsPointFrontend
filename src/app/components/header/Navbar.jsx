@@ -33,7 +33,7 @@ export default function Navbar() {
         </div>
 
         <div
-          className={`${styles.logo} w-44 h-16 sm:w-36 sm:h-12 md:w-48 md:h-20 lg:w-56 lg:h-32 `}
+          className={`${styles.logo} w-44 h-16 sm:w-36 sm:h-12 md:w-48 md:h-20 lg:w-72 lg:h-32 `}
         >
           <Image
             src="/Logo.webp"
