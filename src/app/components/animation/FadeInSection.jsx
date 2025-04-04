@@ -18,7 +18,13 @@ const activeClasses = {
   "slide-up": "opacity-100 translate-y-0",
 };
 
-export default function FadeInSection({ children, animation = "fade-up",  className = "" , delay = 0 }) {
+export default function FadeInSection({
+  children,
+  animation = "fade-up",
+  className = "",
+  delay = 0,
+  ...props // <- accepts onMouseEnter/onMouseLeave
+}) {
   const ref = useRef();
   const [isVisible, setIsVisible] = useState(false);
 
@@ -40,15 +46,16 @@ export default function FadeInSection({ children, animation = "fade-up",  classN
 
   return (
     <div
-    ref={ref}
-    className={clsx(
-      "transition-all duration-700 ease-out will-change-transform",
-      animationClasses[animation],
-      isVisible && activeClasses[animation],
-      className // <- include this line!
-    )}
-  >
-    {children}
-  </div>
+      ref={ref}
+      {...props}
+      className={clsx(
+        "transition-all duration-700 ease-out will-change-transform",
+        animationClasses[animation],
+        isVisible && activeClasses[animation],
+        className
+      )}
+    >
+      {children}
+    </div>
   );
 }

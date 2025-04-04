@@ -14,81 +14,70 @@ import TopProducts from "../productsSection/TopProducts";
 import ReviewSection from "../productsSection/ReviewSection";
 import BlogGrid from "../blog/BlogGrid";
 import FadeInSection from "../animation/FadeInSection";
+
 const HeroSection = () => {
-  const [isLeftHovered, setIsLeftHovered] = useState(false); // 👈 Manage hover state
+  const [isLeftHovered, setIsLeftHovered] = useState(false);
 
   return (
-    <>
-      <main className="">
-        <div className="flex flex-col justify-center items-center mx-auto my-auto lg:px-20 md:px-10 sm:px-5 px-2">
-          <div className="flex justify-center border-t border-gray-200">
-            <div
-              onMouseEnter={() => setIsLeftHovered(true)}
-              onMouseLeave={() => setIsLeftHovered(false)}
-              className="z-30"
-            >
-              <FadeInSection animation="fade-right">
-                <LeftMenuBar />
-              </FadeInSection>
-            </div>
+    <main className="">
+      <div className="flex flex-col justify-center items-center mx-auto my-auto lg:px-20 md:px-10 sm:px-5 px-2">
+        <div className="flex justify-center border-t border-gray-200">
+          {/* <FadeInSection
+            animation="fade-right"
+            onMouseEnter={() => setIsLeftHovered(true)}
+            onMouseLeave={() => setIsLeftHovered(false)}
+            className="z-30"
+          > */}
+            <LeftMenuBar />
+          {/* </FadeInSection> */}
 
-            <div
-              className={`transition-opacity duration-300 ${
-                isLeftHovered ? "opacity-30 pointer-events-none" : "opacity-100"
-              }`}
-            >
-              <FadeInSection animation="fade-up">
-                <HeroSectionMiddle />
-              </FadeInSection>
-            </div>
+          {/* <FadeInSection
+            animation="fade-up"
+            className={`transition-opacity duration-300 ${
+              isLeftHovered ? "opacity-30 pointer-events-none" : "opacity-100"
+            }`}
+          > */}
+            <HeroSectionMiddle />
+          {/* </FadeInSection> */}
 
-            <div
-              className={`transition-opacity duration-300 ${
-                isLeftHovered ? "opacity-30 pointer-events-none" : "opacity-100"
-              }`}
-            >
-              <FadeInSection animation="fade-left">
-                <HeroSectionRight />
-              </FadeInSection>
-            </div>
-          </div>
-
-          <div data-aos="fade-up">
-            <CategoryFilter />
-          </div>
-
-          <div data-aos="zoom-in">
-            <ProductCaraousel />
-          </div>
-
-          <div data-aos="fade-up" data-aos-delay="100">
-            <FeatureProducts />
-          </div>
-
-          <div data-aos="fade-up" data-aos-delay="200">
-            <MotherboardPage />
-          </div>
-
-          <div data-aos="fade-up" data-aos-delay="250">
-            <ProcessorPage />
-          </div>
-
-          <div data-aos="fade-up" data-aos-delay="300">
-            <PcAndServerPage />
-          </div>
-
-          <div data-aos="fade-up" data-aos-delay="350">
-            <TopProducts />
-          </div>
-
-          <ReviewSection />
+          {/* <FadeInSection
+            animation="fade-left"
+            className={`transition-opacity duration-300 ${
+              isLeftHovered ? "opacity-30 pointer-events-none" : "opacity-100"
+            }`}
+          > */}
+            <HeroSectionRight />
+          {/* </FadeInSection> */}
         </div>
 
-        <div data-aos="fade-up" data-aos-delay="400">
-          <BlogGrid />
+        <div data-aos="fade-up">
+          <CategoryFilter />
         </div>
-      </main>
-    </>
+        <div data-aos="zoom-in">
+          <ProductCaraousel />
+        </div>
+        <div data-aos="fade-up" data-aos-delay="100">
+          <FeatureProducts />
+        </div>
+        <div data-aos="fade-up" data-aos-delay="200">
+          <MotherboardPage />
+        </div>
+        <div data-aos="fade-up" data-aos-delay="250">
+          <ProcessorPage />
+        </div>
+        <div data-aos="fade-up" data-aos-delay="300">
+          <PcAndServerPage />
+        </div>
+        <div data-aos="fade-up" data-aos-delay="350">
+          <TopProducts />
+        </div>
+        <ReviewSection />
+      </div>
+
+      <div data-aos="fade-up" data-aos-delay="400">
+        <BlogGrid />
+      </div>
+    </main>
   );
 };
 
