@@ -30,7 +30,7 @@ const HeroSectionMiddle = () => {
               alt="Hero Image"
               width={1000}
               height={500}
-              className="w-full h-auto object-cover"
+              className=" h-auto object-cover"
             />
           </div>
         </div>
