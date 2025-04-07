@@ -2,15 +2,19 @@
 import React from "react";
 import styles from "@/style/Header/Header.module.css";
 import { CiSearch} from "react-icons/ci";
+
 const Categories = () => {
+
+  
   return (
     <div className={`shadow flex items-center gap-2 p-2 mb-4 `}>
+
       <select
         name="category"
         id="search_cate"
         className=" px-3 py-3 rounded  w-44 text-lg font-semibold"
       >
-        <option value="">All Categories</option>
+        <option value="">All Categories </option>
         <option value="33">Memory</option>
         <option value="64"> Cache Memory</option>
         <option value="174"> Desktop memory</option>
@@ -253,8 +257,9 @@ const Categories = () => {
         <option value="115"> Phones</option>
         <option value="116">  IP Phones</option>
         <option value="263">  Phones Accessories</option>
+      
       </select>
-
+        
       <input
         type="text"
         placeholder="Search for a product"
