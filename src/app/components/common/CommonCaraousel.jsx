@@ -31,7 +31,7 @@ const CommonCarousel = ({title,items=[]}) => {
                         alt={item.title}
                         width={250}
                         height={250}
-                        className="object-contain mb-3 lg:h-[20vh] md:h-[50vh] sm:h-[50vh] "
+                        className="object-cover  mb-3 lg:h-[20vh] md:h-[50vh] sm:h-[50vh] "
                       />
 
                       <h2>{item.title}</h2>
