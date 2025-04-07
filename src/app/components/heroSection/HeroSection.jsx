@@ -10,23 +10,20 @@ import PcAndServerPage from "../pcAndServer/PcAndServerPage";
 import TopProducts from "../productsSection/TopProducts";
 import ReviewSection from "../productsSection/ReviewSection";
 import BlogGrid from "../blog/BlogGrid";
-import FadeInSection from "../animation/FadeInSection";
 
 const HeroSection = () => {
   return (
-    <main className="">
+    <main>
       <div className="flex flex-col justify-center items-center mx-auto my-auto lg:px-20 md:px-10 sm:px-5 px-2">
         <div className="flex justify-center border-t border-gray-200">
-          <div>
-            <LeftMenuBar />
-          </div>
+          <LeftMenuBar />
           <HeroSectionMiddle />
           <HeroSectionRight />
         </div>
-        <div data-aos="fade-up" >
+        <div data-aos="fade-up">
           <CategoryFilter />
         </div>
-        <div data-aos="zoom-in" >
+        <div data-aos="zoom-in">
           <ProductCaraousel />
         </div>
         <div data-aos="fade-up" data-aos-delay="100">
@@ -47,7 +44,7 @@ const HeroSection = () => {
         <ReviewSection />
       </div>
 
-      <div data-aos="fade-up" data-aos-delay="400">
+      <div data-aos="fade-up" data-aos-delay="35  0">
         <BlogGrid />
       </div>
     </main>

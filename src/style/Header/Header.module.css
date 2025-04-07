@@ -189,7 +189,7 @@
   display: none;
 }
 
-@media screen and (max-width: 1060px) {
+@media screen and (max-width: 1100px) {
   .headerSec {
     justify-content: center;
   }
@@ -221,7 +221,7 @@
 }
 
 
-@media screen and (max-width:1250px) {
+@media screen and (max-width:1100px) {
   .hamburgerSec {
     display: flex;
   }

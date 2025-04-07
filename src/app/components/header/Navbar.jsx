@@ -6,6 +6,7 @@ import MobileNavbar from "./MobileNavbar";
 import { CiSearch, CiUser, CiShoppingCart } from "react-icons/ci";
 import { RxHamburgerMenu } from "react-icons/rx";
 import Categories from "./Categories";
+
 export default function Navbar() {
   // const [cartCount, setCartCount] = useState(0);
   const [isMobileNavOpen, setIsMobileNavOpen] = useState(false);
@@ -13,9 +14,7 @@ export default function Navbar() {
 
   return (
     <>
-      <nav
-        className={`${styles.navBarContainer} fade-in-start delay-100 `}
-      >
+      <nav className={`${styles.navBarContainer} fade-in-start delay-100 `}>
         {/* Hamburger and Search Icon (Only Visible on Mobile) */}
         <div className="flex items-center justify-center gap-5">
           <div
@@ -50,7 +49,7 @@ export default function Navbar() {
             id="search_cate"
             className=" !md:w-full !w-40 "
           >
-            <option value="">All Categories</option>
+            <option value="">All Categories </option>
             <option value="33">Memory</option>
             <option value="64"> Cache Memory</option>
             <option value="174"> Desktop memory</option>
@@ -311,7 +310,7 @@ export default function Navbar() {
               width={100}
               height={100}
             />
-            <span>
+            <span className="whitespace-nowrap">
               Based on
               <a href="#" className="border-b">
                 18 Reviews
@@ -332,7 +331,7 @@ export default function Navbar() {
           </div>
           <div className={styles.navBarLeftCartSec}>
             <CiShoppingCart size={30} />
-            <span className="lg:block hidden">
+            <span className="lg:block hidden whitespace-nowrap">
               <a href="#">My Cart</a>
             </span>
             {/* {cartCount === 0 && (
