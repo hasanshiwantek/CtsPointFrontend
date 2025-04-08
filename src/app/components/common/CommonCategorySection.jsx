@@ -8,7 +8,7 @@ import {
   CarouselItem,
 } from "@/components/ui/carousel";
 import styles from "@/style/motherboard/MotherboardPage.module.css"; // reuse same CSS
-import {  IoIosArrowForward } from "react-icons/io";
+import { IoIosArrowForward } from "react-icons/io";
 
 const CommonCategorySection = ({
   title,
@@ -69,7 +69,7 @@ const CommonCategorySection = ({
                 <span className="text-[#4563b3]">
                   <Link href={shopNowLink}>Shop Now</Link>
                 </span>
-                < IoIosArrowForward className="text-[#4563b3] " size={15} />
+                <IoIosArrowForward className="text-[#4563b3] " size={15} />
               </div>
             </div>
             <div>

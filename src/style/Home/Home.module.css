@@ -3,7 +3,7 @@
 .leftMenuBarContainer {
   border-left: 1px solid lightgray;
   /* margin-top: 15px; */
-  height: 50vh;
+  height: fit-content;
 }
 .menuBar ul {
   display: flex;
