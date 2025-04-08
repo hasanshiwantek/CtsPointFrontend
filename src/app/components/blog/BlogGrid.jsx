@@ -35,7 +35,7 @@ const BlogGrid = () => {
                   className="pl-1 md:basis-1/2 lg:basis-1/3 sm:basis-1/2 "
                 >
                   <div className="p-1">
-                    <Card className=" border-none shadow-none bg-[transparent]  rounded-lg lg:h-[50vh] md:h-[70vh] md:w-[100%]   flex justify-center items-center  ">
+                    <Card className=" border-none shadow-none bg-[transparent]  rounded-lg  md:w-[100%]   flex justify-center items-center text-center ">
                       <CardContent className="flex flex-col items-center justify-center p-4 ">
                         {/* Product Image */}
                         <Image
