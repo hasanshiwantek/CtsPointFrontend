@@ -142,6 +142,7 @@ li {
   transition: all 0.25s ease;
 }
 
+
 .btn-primary:hover {
   @apply bg-black text-white ;
 }

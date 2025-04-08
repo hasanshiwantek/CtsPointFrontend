@@ -4,6 +4,14 @@ import { IoMdClose, IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import { menuData } from "@/data/NavBarData"; // Import menu data
 import styles from "@/style/Header/Header.module.css"; // Import module styling
 import Link from "next/link";
+import {
+  CiHeart,
+  CiUser,
+  CiPhone,
+  CiLinkedin,
+  CiFacebook,
+} from "react-icons/ci";
+import { AiOutlinePinterest } from "react-icons/ai";
 const MobileNavbar = ({ isOpen, setIsOpen }) => {
   const extraLinks = [
     {
@@ -20,9 +28,21 @@ const MobileNavbar = ({ isOpen, setIsOpen }) => {
         { title: "Privacy Policy", link: "/privacy-policy" },
         { title: "Contact Us", link: "/contact" },
         { title: "Blog", link: "/blog" },
-        { title: "Customer Login", link: "/login" },
-        { title: "Wish Lists", link: "/wishlist" },
-        { title: "tel:+12094984198", link: "tel:+12094984198" },
+        {
+          title: "Customer Login",
+          link: "/login",
+          icon: <CiUser className="mr-2 text-3xl" />,
+        },
+        {
+          title: "Wish Lists",
+          link: "/wishlist",
+          icon: <CiHeart className="mr-2 text-3xl" />,
+        },
+        {
+          title: "+1 (209) 498-4198",
+          link: "tel:+12094984198",
+          icon: <CiPhone className="mr-2 text-3xl" />,
+        },
       ],
     },
   ];
@@ -47,20 +67,18 @@ const MobileNavbar = ({ isOpen, setIsOpen }) => {
       ],
     },
   ];
-  
-
 
   const fullMenuData = [...menuBarData, ...menuData];
   const [menuStack, setMenuStack] = useState([]); // Empty initially
 
   // Get the current menu based on the stack
   const currentMenu =
-  menuStack.length === 0
-    ? fullMenuData
-    : menuStack.reduce(
-        (acc, curr) => acc.find((item) => item.title === curr)?.subMenu || [],
-        fullMenuData
-      );
+    menuStack.length === 0
+      ? fullMenuData
+      : menuStack.reduce(
+          (acc, curr) => acc.find((item) => item.title === curr)?.subMenu || [],
+          fullMenuData
+        );
   // Get the current title for the submenu header
   const currentTitle =
     menuStack.length > 0 ? menuStack[menuStack.length - 1] : "Menu";
@@ -97,7 +115,10 @@ const MobileNavbar = ({ isOpen, setIsOpen }) => {
         {/* Show the category name at the top of the submenu */}
         {menuStack.length > 0 && (
           <div className="p-2 text-center text-lg font-bold  border-b border-gray-200 bg-gray-100">
-            <Link href={currentMenu.find((item) => item.link)?.link || "#"} className="text-lg">
+            <Link
+              href={currentMenu.find((item) => item.link)?.link || "#"}
+              className="text-lg"
+            >
               All {currentTitle}
             </Link>
           </div>
@@ -119,7 +140,9 @@ const MobileNavbar = ({ isOpen, setIsOpen }) => {
                 >
                   {/* Ensure Link only wraps the text */}
                   {item.link ? (
-                    <Link href={item.link} className="text-xl">{item.title}</Link>
+                    <Link href={item.link} className="text-xl">
+                      {item.title}
+                    </Link>
                   ) : (
                     <span className="text-xl">{item.title}</span>
                   )}
@@ -141,7 +164,11 @@ const MobileNavbar = ({ isOpen, setIsOpen }) => {
                     key={index}
                     className="border-b border-gray-200 flex justify-between items-center p-3 ml-4 cursor-pointer "
                   >
-                    <Link href={link.link} className="text-lg">
+                    <Link
+                      href={link.link}
+                      className="text-lg flex items-center gap-2"
+                    >
+                      {link.icon && link.icon}
                       {link.title}
                     </Link>
                   </div>

@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "@/style/ProductSection/ProductSection.module.css";
-
+import { FiRefreshCcw } from "react-icons/fi";
 const CategoryFilter = () => {
   return (
     <div
@@ -18,7 +18,9 @@ const CategoryFilter = () => {
                   Customize, Modify, Upgrade, Repair, Replace
                 </p>
               </div>
-              <div className={`${styles.formWrapper} flex-col lg:flex-row md:flex-row `}>
+              <div
+                className={`${styles.formWrapper} flex-col lg:flex-row md:flex-row `}
+              >
                 {/* Level 1 Dropdown */}
                 <div className={styles.formField}>
                   <select
@@ -77,10 +79,10 @@ const CategoryFilter = () => {
                     RUN
                   </button>
                   <button
-                    className={`${styles.btnPrimary} btn-primary`}
+                    className={`${styles.btnPrimary} btn-primary `}
                     title="Refresh"
                   >
-                    Refresh
+                    <FiRefreshCcw  size={20}/>
                   </button>
                 </div>
               </div>
