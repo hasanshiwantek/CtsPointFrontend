@@ -142,10 +142,10 @@ li {
   transition: all 0.25s ease;
 }
 
-
 .btn-primary:hover {
-  @apply bg-black text-white ;
+  @apply bg-black text-white;
 }
+
 
 /* Responsive Typography */
 @media (max-width: 768px) {
@@ -221,7 +221,6 @@ li {
   }
 }
 
-
 @layer utilities {
   /* ✅ Fade animations */
   .fade-in-start {
@@ -286,8 +285,6 @@ li {
   }
 }
 
-
-
 @layer base {
   * {
     @apply border-border;
@@ -296,7 +293,6 @@ li {
     @apply bg-background text-foreground;
   }
 }
-
 
 svg.lucide.lucide-chevron-down.h-4.w-4.shrink-0.text-muted-foreground.transition-transform.duration-200 {
   height: 2rem !important;

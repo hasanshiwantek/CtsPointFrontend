@@ -16,12 +16,6 @@
   background-color: var(--border-color);
 }
 
-
-
-
-
-
-
 .sidebar ul {
   padding: 1rem 1rem;
   display: flex;
@@ -55,9 +49,7 @@
   cursor: pointer;
 }
 
-
-
-.productGrid2 .description{
+.productGrid2 .description {
   display: inline-block;
   position: relative;
   text-decoration: none;
@@ -66,7 +58,7 @@
 }
 
 .productGrid2 .description::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 0%;
   height: 1px;
@@ -101,7 +93,7 @@
 
 @media screen and (max-width: 365px) {
   .productGrid2 .card .description {
-    width: 80vw ;
+    width: 80vw;
   }
   .sidebar ul {
     flex-direction: column;
