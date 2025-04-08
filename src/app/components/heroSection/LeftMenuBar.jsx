@@ -128,7 +128,7 @@ const LeftMenuBar = () => {
 
                             {activeSubMenu === sub.title && sub.subMenu && (
                               <div className={styles.nestedSubMenu}>
-                                <ul>
+                                <ul className="fade-in-left  delay-75">
                                   {sub.subMenu.map((nested, nestedIndex) => (
                                     <li key={nestedIndex}>
                                       <Link href={nested.link}>
