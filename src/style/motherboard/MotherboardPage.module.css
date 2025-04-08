@@ -16,6 +16,12 @@
   background-color: var(--border-color);
 }
 
+
+
+
+
+
+
 .sidebar ul {
   padding: 1rem 1rem;
   display: flex;
@@ -47,6 +53,31 @@
   opacity: 0.6;
   transition: all 0.7s ease-in-out;
   cursor: pointer;
+}
+
+
+
+.productGrid2 .description{
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.productGrid2 .description::after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--font-color); /* Same as your primary color */
+  transition: width 0.3s ease;
+}
+
+.productGrid2 .description:hover::after {
+  width: 100%;
 }
 
 @media screen and (max-width: 1024px) {
