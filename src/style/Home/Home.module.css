@@ -1,9 +1,10 @@
 /* MENUBAR LEFT STYLING */
-
 .leftMenuBarContainer {
-  border-left: 1px solid lightgray;
+  border-left: 1px solid #f0f0f0;
   /* margin-top: 15px; */
+  border-bottom: 1px solid #f0f0f0;
   height: fit-content;
+
 }
 .menuBar ul {
   display: flex;
@@ -11,7 +12,6 @@
   gap: 3px;
   position: relative;
   border-radius: 0;
-  border-bottom: 2px solid #f0f0f0;
   border-top: none;
   left: -1px;
   right: -1px;
