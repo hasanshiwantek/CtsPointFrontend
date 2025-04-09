@@ -297,7 +297,7 @@ export default function Navbar() {
           </select>
           <input type="text" placeholder="Search for a product" />
           <button>
-            <CiSearch />
+            <CiSearch size={20}/>
           </button>
         </div>
 
