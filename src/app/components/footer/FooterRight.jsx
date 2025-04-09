@@ -118,7 +118,7 @@ const FooterRight = () => {
                     <ul className="text-[#323232] dark:text-gray-400 ">
                       {items.map((item) => (
                         <li key={item} className="mb-8">
-                          <Link href="#" className="hover:underline">
+                          <Link href="#">
                             {item}
                           </Link>
                         </li>
