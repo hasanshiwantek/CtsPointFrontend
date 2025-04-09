@@ -112,6 +112,35 @@
   color: #fff;
 }
 
+
+
+.footerRightSec ul li{
+  /* display: inline-block; */
+  position: relative;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.footerRightSec ul li::after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: #fff; /* Same as your primary color */
+  transition: width 0.3s ease;
+}
+
+.footerRightSec ul li:hover::after {
+  width: 70%;
+}
+
+
+
+
+
 /* FOOTER BOTTOM STYLING */
 
 .footerBottomContainer {
